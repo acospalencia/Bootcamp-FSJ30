@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.main-body {
+  background-color: #192c63;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0
+}
+
+.wraper {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.logo-text {
+  font-size: 2.5em;
+}
+.logo-text span {
+  color: rgb(10,165,165);
+  text-shadow: 1px 1px 3px white;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 4rem
+}
+
+.foto-container img {
+  width: 30vw;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.boton {
+  background: #bb0b83;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: ponter;
+}
+
+.typing {
+  overflow: hidden;
+  border-right: 2px white;
+  animation: typing 2s steps(25);
+}
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+.projects-header .centered{
+  text-align: center;
+}
+
+.projectcard {
+  background-color: #233a7a;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px
+}
+
+.img-top {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.enlaces {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.formulario {
+  width: 600px;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.inpt {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.inptt {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.lbl{
+  color: black;
+}
+
+.bt-submit {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-section {
+  background-color: #192c63;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-text{
+  font-size: 2em;
+}
+
+.redessociales {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}

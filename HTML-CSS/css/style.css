@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --primary-color: #f54804;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray  ;
+    background-image: url("../assets/images/background-adare-restaurant.jpg");
+    background-size: cover;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    text-align: center;
+}
+
+/* --- header --- */
+.container .header{
+    height: 20vh;
+}
+
+/* --- logo --- */
+.container .header .img-container{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .img-container .img-logo{
+    height: 15vh;
+}
+
+/* ---navbar---*/
+.container .header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.container .header .navbar .nav-item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.container .header .navbar .nav-item:hover{
+   /* animation: navItemHover 0.3s forwards; */
+    color: var(--primary-color);
+    font-size: 1.4em; 
+    text-decoration: underline;
+
+}
+
+/*
+@keyframes navItemHover{
+    to {
+        color: var(--primary-color);
+        font-size: 1.4em; 
+        text-decoration: underline;
+    }
+}
+*/
+
+/* --- main content --- */
+
+.container .main-container{
+   margin-top: 10vh;
+}
+
+.container .main-container .main-text-container{
+    color: white;
+    padding: 2rem;
+}
+
+.container .main-container .main-text-container .main-text{
+    font-family:   'Josefin Sans', sans-serif;
+    font-size: 3em;
+    transition: 2s;
+}
+
+.container .main-container .main-text-container .main-text:hover{
+    text-shadow: 0.05em 0.05em var(--primary-color);
+    transition: 0.3s;
+}
+
+.container .main-container .main-text-container article{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.container .main-container .main-text-container article p{
+    color: gray;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
+.container .main-container .main-text-container article p strong a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.1em 0.1em #f54804;
+}
+
+.container .main-container .maps iframe{
+    height: 50vh;
+    width:  60vw;
+}
+
+.container .footer{
+    color: white;
+}
+
+.container .footer h4{
+    font-size: 1.1em;
+}
