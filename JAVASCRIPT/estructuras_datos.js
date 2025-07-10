@@ -60,3 +60,49 @@ console.log(programador);
 programador.nombre = "Carlos el programador";
 console.log(programador);
 programador.correr();
+
+//Arrays
+let arraicitoIdx = [18, 19, 25, 33];
+console.log(arraicitoIdx[0]); 
+
+//"Array asociativo"
+let arrayAsociativo = {
+    nombre: "Carlos"
+};
+
+console.log(arrayAsociativo["nombre"]); 
+
+let arracitoMulti = [
+    [1, 2, 3], [{nombre: "Carlos"}]
+];
+
+console.log(arracitoMulti[1][0]["nombre"])
+
+let cajaIdiceCero = arracitoMulti[0];
+console.log(cajaIdiceCero[1]);
+
+let cajaIndiceUno = arracitoMulti[1];
+
+console.log(cajaIndiceUno[0]);
+console.log(cajaIndiceUno[0].nombre);
+
+//let nombres = ["Carlos", "Juan", "Pedro"];
+nombres.forEach((value, index) => {
+    console.log(index);
+    
+    console.log(value);
+});
+
+let nombres = ["Carlos", "Juan", "Pedro"];
+const nombresmayusculas = nombres.map((value) => {
+    return value.toUpperCase();
+});
+
+console.log(nombresmayusculas);
+
+
+let numeros = [1, 2, 3, 4, 5];
+let numerosPorDos = numeros.map((value) => {
+    return value * 2;
+});
+console.log(numerosPorDos);
