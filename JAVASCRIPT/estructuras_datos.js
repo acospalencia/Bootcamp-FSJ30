@@ -106,3 +106,34 @@ let numerosPorDos = numeros.map((value) => {
     return value * 2;
 });
 console.log(numerosPorDos);
+
+let arrayNumerico = [1, 2, 3, 4, 5];
+
+arrayNumerico.forEach((value, index, array) => {
+    if (index + 1 < array.length) {
+        console.log(array[index + 1]);
+        
+    }
+});
+
+const usuarios = [{
+    nombre : "carlos", 
+    edad : 20
+},{
+    nombre : "juan", 
+    edad : 24
+},{
+    nombre : "alejandra", 
+    edad : 21
+}]
+
+const mayorDe21 = usuarios.filter((value) => {
+    return value.edad > 21;
+})
+console.log(mayorDe21);
+
+const usuarioCarlos = usuarios.find( usuario => usuario.nombre === "Carlos");
+
+console.log(usuarioCarlos);
+
+
