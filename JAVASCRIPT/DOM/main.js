@@ -27,15 +27,17 @@ btnApretable.addEventListener('click', () => {
 })
 
 let array = [1,2,3]
+console.log(array);
+
 
 //localstorage -> almacenamiento local del navegador
 localStorage.setItem('array', JSON.stringify(array))
 console.log(localStorage.getItem('array'));
 
-
 btnArraycito.addEventListener('click', () => {
     console.log("estoy andando");
     array.push(4)
     console.log(array);
+    localStorage.setItem('array', JSON.stringify(array))
     
 })
