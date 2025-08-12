@@ -1,20 +1,47 @@
-//console.log("heil hittler");
+//console.log("hola mundo");
 
 let cursosCarrito = [];
 
 const contenedorCarrito = document.getElementById("cuerpo-carrito");
 
-function vaciarCarrito(evento){
+function vaciarCarrito(evento) {
     console.log("se vacio el cayito");
-    
+
+    cursosCarrito = [];
+    contenedorCarrito.innerHTML = '';
+
 }
 
-function agregarCurso(evento){
+function agregarCurso(evento) {
     console.log("Se agrego un curso");
     let curso = leerDatosCursos(evento.target.parentElement.parentElement)
+
+    const existe = cursosCarrito.some((cursoArr) => cursoArr.id == curso.id);
+
+    if (existe) {
+        cursosCarrito.map((cursoArr) => {
+            if (cursoArr.id === curso.id) {
+                cursoArr.cantidad += 1;
+                cursoArr.precio = cursoArr.precio.substring(1);
+                curso.precio = curso.precio.substring(1);
+
+                cursoArr.precio = parseFloat(cursoArr.precio);
+                curso.precio = parseFloat(curso.precio);
+                cursoArr.precio += curso.precio;
+
+                cursoArr.precio = `$${cursoArr.precio}`
+                return cursoArr;
+            }
+        })
+    }
+    else {
+        cursosCarrito.push(curso);
+    }
+
     console.log(curso);
-    cursosCarrito.push(curso);
     console.log(cursosCarrito);
+
+
     llenarCarro();
 }
 
@@ -35,11 +62,27 @@ function leerDatosCursos(curso) {
     return infoCurso;
 }
 
-function llenarCarro(){
+function eliminarCurso(idCurso) {
+    const cursoAEliminar = cursosCarrito.findIndex((cursoId) => cursoId.id === String(idCurso));
+
+    if (cursoAEliminar !== -1) {
+        cursosCarrito.splice(cursoAEliminar, 1);
+        
+        console.log('Curso eliminado:', idCurso);
+    } else {
+        console.warn('No se encontró el curso con ID:', idCurso, cursoAEliminar);
+    }
+
+    console.log(cursosCarrito);
+    llenarCarro()
+
+}
+
+function llenarCarro() {
     contenedorCarrito.innerHTML = "";
 
-    cursosCarrito.map((curso) =>{
-        
+    cursosCarrito.map((curso) => {
+
         let fila = document.createElement("tr");
 
         fila.innerHTML = `
