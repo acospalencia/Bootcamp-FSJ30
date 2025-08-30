@@ -6,7 +6,7 @@ function App() {
     <>
       <h1>Concepts React</h1>
 
-      <Saludo nombre="Juan" />
+      <Saludo nombre="Carlos" apellido="Acosta" />
     </>
   )
 }
