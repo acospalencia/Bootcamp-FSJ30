@@ -1,5 +1,5 @@
 {
-  "name": "peticiones-app",
+  "name": "firebase-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,13 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.2.1",
-    "firebase": "^12.2.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-hook-form": "^7.62.0",
-    "react-router": "^7.8.1",
-    "yup": "^1.7.0"
+    "react-router": "^7.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

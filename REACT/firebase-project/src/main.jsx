@@ -8,5 +8,3 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
-
-// SWC -> Speedy Web Compiler -> Un compilador que traduce el codigo en la web de forma rapida
